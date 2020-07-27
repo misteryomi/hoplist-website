@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../fonts/circular/CircularStd-Black.otf');
+  }
+
+p, body {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+h2, .h2 {
+    font-size: 25px !important;
+    font-family: 'Poppins', sans-serif;
+}
+h1, .h1 {
+    color: #4a4a4a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 39px;
+}
+h4, .h4 {
+    font-family: 'Poppins', sans-serif;
+}
+.m-title {
+    font-size: 34px!important;
+    font-family: 'Poppins', sans-serif;
+    color: #4a4a4a;
+}
+.s-title {
+    font-family: 'Poppins', sans-serif;
+}
+.accordion .card-title a {
+    font-family: 'Lato', sans-serif;    
+}
+.card-sm-bg {
+    position: relative;
+    z-index: 1;
+}
+.card {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);    
+}
+.accordion .card {
+    box-shadow: none    
+}
+.card-sm-bg::after {
+    position: absolute;
+    content: ' ';
+    top: 10px;
+    left: 10px;
+    z-index: 0;
+    width: 90px;
+    height: 90px;
+    opacity: 0.06;
+    background: #FC4A1A no-repeat left center;
+}
+.card-sm-bg.blue::after {
+    background-color: #2680EB;
+}
+.header {
+    margin-bottom: 0;
+    background-image: url('../img/preview/header_bg.png'); 
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh!important;
+    min-height: 550px;
+}
+.header-fullscreen {
+    background-image: url('../img/preview/header_bg.png'); 
+    padding-bottom: 20px;
+}
+.inline {
+    display: inline!important;
+}
+.h-100 {
+    height: 100vh!important;
+    min-height: 500px;
+}
+
+.excerpt-bg::before {
+    position: absolute;
+    content: '';
+    left: -75px;
+    top: -70px;
+    width: 100%;
+    height: 100%;
+    background: left -30px no-repeat;
+    background-size: cover;  
+}
+.capture-bg::before {
+    background-image: url('../img/preview/discover.png');
+}
+.share-bg::before {
+    background-image: url('../img/preview/share.png');
+}
+.host-bg::before {
+    background-image: url('../img/preview/host.png');
+    background-position: right 0;
+    left: auto;
+    right: -8px;
+}
+.custom-navbar-toggler {
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 990px) {
+    .capture-bg, .host-bg, .share-bg {
+        background: none;
+    }
+    .header {
+        background-size: cover;
+    }
+}
