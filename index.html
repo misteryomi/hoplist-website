@@ -39,8 +39,8 @@
 
         <div class="navbar-left mr-4">
           <a class="navbar-brand" href="/">
-            <img class="logo-dark" src="./assets/img/hoplist.png" alt="logo">
-            <img class="logo-light" src="./assets/img/hoplist.png" alt="logo">
+            <img class="logo-dark" src="./assets/img/footer-logo.png" alt="logo">
+            <img class="logo-light" src="./assets/img/header-logo.png" alt="logo">
           </a>
           <button class="navbar-toggler custom-navbar-toggler" type="button">&#9776;</button>
         </div>
@@ -59,8 +59,10 @@
 
 
         <div class="d-flex align-items-center hide-mobile">
-            <a class="nav-link ml-lg-5 mr-0" href="faq.html" >FAQs</a>
-            <a class="nav-link ml-lg-5 mr-2" href="#" data-toggle="modal" data-target="#modal-register-3">Feedback / Support</a>
+            <a class="nav-link ml-lg-5 mr-0" href="faq.html" >Frequently Asked Questions</a>
+            <a class="nav-link ml-lg-5 mr-0" href="#" >Community</a>
+            <a class="nav-link ml-lg-5 mr-0" href="#" >About Us</a>
+            <!-- <a class="nav-link ml-lg-5 mr-2" href="#" data-toggle="modal" data-target="#modal-register-3">Feedback / Support</a> -->
             <!-- <a class="btn btn-sm btn-success ml-lg-5 mr-2" href="#" data-toggle="modal" data-target="#modal-subscribe-3">Sign Up For Beta Testing</a> -->
 
         </div>
@@ -70,16 +72,47 @@
 
 
     <!-- Header -->
-    <header class="header text-white h-fullscreen pb-5" style="background-image: url(./assets/img/header_bg.png)">
-      <div class="overlay opacity-95" style="background-color: #181d29"></div>
+    <header class="header text-white h-fullscreen pb-5" style="background-color: #181d29; background-image: url(./assets/img/header_bg.png)">
+      <div class="overlay opacity-80">
+        <div id="lottie"></div>
+      </div>
       <div class="container">
         <div class="row align-items-center h-100">
 
           <div class="col-md-8 mx-auto text-center py-8 flex-grow">
             <h1>Discover different experiences around you</h1>
-            <p class="lead mt-5">Find things to do, meet new people who share your interest, host activities, discover hidden treasures around you. It's time to take a break, and "hop" on a new adventure.</p>
-            <hr class="w-10 my-7">
-            <a class="btn btn-xl btn-round btn-success px-7" href="#">Sign up — It's free</a>
+            <p class="mt-5">Find things to do, meet new people who share your interest, host activities, discover hidden treasures around you. It's time to take a break, and "hop" on a new adventure.</p>
+            <hr class="w-10 my-4">
+            <div class="gap-xy " >
+              <div class="d-flex flex-row justify-content-center store-btns">
+                  <!-- <div class="store-btn store-btn-inverse">
+                      <a href="#" target="_blank">
+                          <div class="row">
+                              <div class="col-4">
+                                  <div class="icon apple-store-icon"></div>
+                              </div>
+                              <div class="col-8">
+                                  <span>Get app on<br><strong>Apple Store</strong></span>
+                              </div>
+                          </div>
+                      </a>
+                  </div> -->
+                  <div class="store-btn store-btn-inverse">
+                      <a href="https://play.google.com/store/apps/details?id=com.hoplist" target="_blank">
+                          <div class="row">
+                              <div class="col-4">
+                                  <div class="icon play-store-icon"></div>
+                              </div>
+                              <div class="col-8">
+                                  <span>Get app on<br><strong>Google Play</strong></span>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+            <!-- <a class="btn btn-xl btn-round btn-success px-7" href="#">Sign up — It's free</a> -->
           </div>
 
           <div class="w-100"></div>
@@ -100,18 +133,22 @@
     <!-- Main Content -->
     <main class="main-content">
 
-      <section class="section bg-white overflow-hidden">
-        <div class="mt-5 mb-5">
+      <section class="section bg-white overflow-hidden  pb-0">
+        <div class="mt-5">
           <div class="container">  
               <div class="row">
 
             <div class="col-md-6 mx-auto text-center mt-8 mt-md-0">
-              <img src="./assets/img/activities.png" alt="..." data-aos="fade-up">
+              <div class="row">
+                <div class="col-md-6 mx-auto">
+                  <img src="./assets/img/activities.png" alt="..." data-aos="fade-up">
+                </div>
+              </div>
             </div>
 
-            <div class="excerpt-bg host-bg col-md-5 align-self-center text-center text-md-left mt-5">
-              <h2>Host your own unique activity</h2>
-              <p>Sign up and become a host by creating your own unique activity, make plans with friends around to come share the experience with you, try something new - from hosting a movie night, going hiking, game night, wine tasting, street photo adventure, food tasting, horse-back riding - have fun. Become a host, and show your community what they are missing out on.</p>
+            <div class=" col-md-6 align-self-center text-center text-md-left mt-5">
+              <h2>Join <span>activities</span> around you</h2>
+              <p>Discover distinct experiences around you by connecting with people who share the same interests as you do. Join in on the activities easily and be a part of that community.</p>
               <br>
 
             </div>
@@ -121,20 +158,24 @@
       </section>
     
 
-        <section class="section overflow-hidden" style="background-image: linear-gradient(135deg, #f9f7ff 0%, #fff 50%, #f9f7ff 100%);">
-          <div class="mt-5 mb-5">
+        <section class="section overflow-hidden pb-0" style="background-color: #FBF5F2;">
+          <div class="">
             <div class="container">  
               <div class="row">
 
-                <div class="capture-bg excerpt-bg col-md-5 align-self-center text-center text-md-left">
-                  <h2>Discover activities around you</h2>
-                  <p>Discover distinct experiences by connecting with people who share the same interests as you do. Sign up and find the best activities around you - ranging from boat cruise, cooking class, trekking adventure, social impact, street painting, shopping tour, sight-seeing - the possibilities are endless.</p>
+                <div class="col-md-6 align-self-center text-center text-md-left">
+                  <h2>Create your own <span>unique</span> activities</h2>
+                  <p>Sign up and become a host by creating your own unique activity, make plans with friends around to come share the experience with you, try something new - from hosting a movie night, going hiking, food tasting - have fun.</p>
                   <br>
 
                 </div>
                 
-                <div class="col-md-7 mx-auto text-center mt-8 mt-md-0 order-first order-md-last">
-                  <img src="./assets/img/unique.png" alt="..." data-aos="fade-up">
+                <div class="col-md-6 mx-auto text-center mt-8 mt-md-0 order-first order-md-last">
+                  <div class="row">
+                    <div class="col-md-6 mx-auto">
+                      <img src="./assets/img/unique.png" alt="..." data-aos="fade-up">
+                    </div>
+                  </div>
                 </div>
 
               </div>
@@ -143,103 +184,182 @@
         </section>
           
 
-      <section class="section py-7" style="background-color: #8ea6e6">
+      <section class="section py-7" style="background-color: #23BF82; background-image: url('./assets/img/call-to-action-bg.png')">
         <div class="container">
           <div class="row gap-y align-items-center">
-            <div class="col-md-9">
-              <h4 class="mb-0 text-white text-center text-md-left">Want a bite? You're in the right place!</h4>
+            <div class="col-md-7">
+              <h2 class="mb-2 text-white text-center text-md-left">More cool features available on the app</h2>
+              <p class="text-white text-center text-md-left">Download Hoplist app to discover what to do with others, connect, collaborate and be inspired by people, who have similar interests as you do in your city.</p>
             </div>
 
-            <div class="col-md-3 text-center text-md-right">
-              <a class="btn btn-lg btn-round btn-light" href="#">Take a test drive</a>
+            <div class="col-md-5 text-center text-md-center">
+              <div class="d-flex flex-row justify-content-center store-btns">
+                  <!-- <div class="store-btn store-btn-inverse">
+                      <a href="#" target="_blank">
+                          <div class="row">
+                              <div class="col-4">
+                                  <div class="icon apple-store-icon"></div>
+                              </div>
+                              <div class="col-8">
+                                  <span>Get app on<br><strong>Apple Store</strong></span>
+                              </div>
+                          </div>
+                      </a>
+                  </div> -->
+                  <div class="store-btn store-btn-inverse">
+                      <a href="https://play.google.com/store/apps/details?id=com.hoplist" target="_blank">
+                          <div class="row">
+                              <div class="col-4">
+                                  <div class="icon play-store-icon"></div>
+                              </div>
+                              <div class="col-8">
+                                  <span>Get app on<br><strong>Google Play</strong></span>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section bg-gray">
+      <section class="section pt-7 bg-gray categories">
         <div class="container">
-          <header class="section-header">
-            <h2>Powerful Features</h2>
-            <br>
-            <p class="lead">Limitless possibilities. What will you create?</p>
+          <header class="section-header mb-5">
+            <h2>The <span>Hoplist</span> Community</h2>
+            <p>There’s always something to do and someone to do it with.</p>
           </header>
 
 
           <div class="row gap-y text-center">
 
-            <div class="col-md-6 col-lg-3 py-6">
-              <p><i class="icon-paintbrush lead-7 text-muted"></i></p>
-              <h6>Customizable Designs</h6>
+            <div class="col-md-6 col-lg-4 py-6">
+              <p><img src="./assets/img/art.png" width="150px" alt="" /></p>
+              <h6>Art & Culture</h6>
             </div>
 
 
-            <div class="col-md-6 col-lg-3 py-6">
-              <p><i class="icon-search lead-7 text-muted"></i></p>
-              <h6>SEO Friendly</h6>
+            <div class="col-md-6 col-lg-4 py-6">
+              <p><img src="./assets/img/food.png" width="150px" alt="" /></p>
+              <h6>Food & Drink</h6>
             </div>
 
 
-            <div class="col-md-6 col-lg-3 py-6">
-              <p><i class="icon-mobile lead-7 text-muted"></i></p>
-              <h6>Responsive Mobile Sites</h6>
+            <div class="col-md-6 col-lg-4 py-6">
+              <p><img src="./assets/img/nature.png" width="150px" alt="" /></p>
+              <h6>Nature & Outdoor</h6>
             </div>
 
 
-            <div class="col-md-6 col-lg-3 py-6">
-              <p><i class="icon-linegraph lead-7 text-muted"></i></p>
-              <h6>High Performance</h6>
+            <div class="col-md-6 col-lg-4 py-6">
+              <p><img src="./assets/img/entertain.png" width="150px" alt="" /></p>
+              <h6>Entertainment</h6>
             </div>
 
-            <div class="col-md-6 col-lg-3 py-6">
-              <p><i class="icon-dial lead-7 text-muted"></i></p>
-              <h6>Manage on the Go</h6>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3 py-6">
-              <p><i class="icon-lock lead-7 text-muted"></i></p>
-              <h6>High Security</h6>
+            <div class="col-md-6 col-lg-4 py-6">
+              <p><img src="./assets/img/sport.png" width="150px" alt="" /></p>
+              <h6>Sport & Wellness</h6>
             </div>
 
 
-            <div class="col-md-6 col-lg-3 py-6">
-              <p><i class="icon-pictures lead-7 text-muted"></i></p>
-              <h6>Powerful Media Management</h6>
-            </div>
-
-
-            <div class="col-md-6 col-lg-3 py-6">
-              <p><i class="icon-happy lead-7 text-muted"></i></p>
-              <h6>Easy and Accessible</h6>
+            <div class="col-md-6 col-lg-4 py-6">
+              <p><img src="./assets/img/meetup.png" width="150px" alt="" /></p>
+              <h6>Meet-Up</h6>
             </div>
 
           </div>
         </div>
       </section>
 
+      <section class="section py-7" style="background-color: #23BF82; background-image: url('./assets/img/call-to-action-alt.png')">
+        <div class="container">
+          <div class="row gap-y align-items-center">
+            <div class="col-md-7">
+              <h4 class="mb-2 text-white text-center text-md-left">Made for You</h4>
+              <p class="text-white text-center text-md-left">From music festivals and conventions to pop-up dinners and photography classes, transform your vision into an experience people will love.</p>
+            </div>
 
-    <footer class="footer text-white text-xs-center py-7" style="background: #2a2e43">
+            <div class="col-md-5 text-center text-md-center">
+              <div class="d-flex flex-row justify-content-center store-btns">
+                  <!-- <div class="store-btn store-btn-inverse">
+                      <a href="#" target="_blank">
+                          <div class="row">
+                              <div class="col-4">
+                                  <div class="icon apple-store-icon"></div>
+                              </div>
+                              <div class="col-8">
+                                  <span>Get app on<br><strong>Apple Store</strong></span>
+                              </div>
+                          </div>
+                      </a>
+                  </div> -->
+                  <div class="store-btn store-btn-inverse">
+                      <a href="https://play.google.com/store/apps/details?id=com.hoplist" target="_blank">
+                          <div class="row">
+                              <div class="col-4">
+                                  <div class="icon play-store-icon"></div>
+                              </div>
+                              <div class="col-8">
+                                  <span>Get app on<br><strong>Google Play</strong></span>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <footer class="footer text-center text-md-left py-7" style="background: #FBF5F2">
       <div class="container">
         <div class="row">
-            <div class="col-md-3"> 
-                <h2 class="ml-2">Hoplist</h2>
-                <div class="social">
-                  <a class="social-twitter" target="_blank" href="http://twitter.com/hoplisthq"><i class="fa fa-twitter"></i></a>
-                  <a class="social-instagram" target="_blank" href="http://instagram.com/hoplisthq"><i class="fa fa-instagram"></i></a>
-                </div>          
+            <div class="col-md-3 mt-5"> 
+                <img src="assets/img/footer-logo.png" width="100px" />
+                <p class="font-size-10 mt-2">Discover unique activities around you</p>
+                <!-- <h2 class="ml-2">Hoplist</h2> -->
             </div>
-            <div class="col-md-3">          
-              <p class="text-muted mb-0">About</p>    
-              <a href="faq.html">Faqs</a> 
+            <div class="col-md-3 mt-5">          
+              <p class="text-dark font-weight-bold mb-0">Product</p>    
+              <a href="community.html">Community</a> <br/>
+              <a href="about.html">About</a>  <br/>
+              <a href="about.html">HopStore <span class="badge badge-success badge-pale badge-pill">Coming soon</span></a> 
             </div>
-            <div class="col-md-3">     
-              <p class="text-muted mb-0">Product</p>     
-              <a href="#" data-toggle="modal" data-target="#modal-subscribe-3">Sign up for beta testing</a> 
+            <div class="col-md-3 mt-5">     
+              <p class="text-dark font-weight-bold mb-0">Information</p>     
+              <a href="faq.html">Frequently Asked Questions</a> <br/>
+              <a href="#">Suggest a Feature</a> <br/>
+              <a href="#">Community Guidelines</a> 
             </div>
-            <div class="col-md-3 pt-5">          
-                <small>© Hoplist 2019, All rights reserved.</small>
-            </div>    
+            <div class="col-md-3 mt-5">          
+              <p class="text-dark font-weight-bold mb-0">Follow</p>     
+                <a class="social-twitter" target="_blank" href="http://twitter.com/hoplisthq">
+                  <span class="iconbox iconbox-xs">
+                    <i class="fa fa-twitter"></i>
+                  </span>                           
+                  Twitter         
+                </a><br/>
+                <a class="social-instagram" target="_blank" href="http://instagram.com/hoplisthq">
+                  <span class="iconbox iconbox-xs">
+                  <i class="fa fa-instagram"></i>
+                  </span>
+                  Instagram
+                </a>
+          </div>    
+
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-md-4 d-flex justify-content-between">
+            <a href="#">info@hoplist.co</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="col-md-8 text-center text-md-right">
+            <small>© Hoplist 2020, All rights reserved.</small>            
+          </div>
         </div>
       </div>
     </footer>
@@ -351,6 +471,8 @@
     <!-- Scripts -->
     <script src="./assets/js/page.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/lottie.js"></script>
+    <script src="./assets/js/animation.js"></script>
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
     <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='MMERGE1';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='MMERGE2';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
   </body>
